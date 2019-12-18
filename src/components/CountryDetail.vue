@@ -3,6 +3,8 @@
     <h3>{{country.name}}</h3>
     <p>{{country.capital}}</p>
     <p>{{country.population}}</p>
+    <p>{{country.languages}}</p>
+    <img class="lrg-flag" :src="country.flag"/>
   </div>
 </template>
 
