@@ -1,9 +1,9 @@
 <template lang="html">
   <div v-if="country">
     <h3>{{country.name}}</h3>
-    <p>{{country.capital}}</p>
-    <p>{{country.population}}</p>
-    <p>{{country.languages}}</p>
+    <p>Capital City: {{country.capital}}</p>
+    <p>Population: {{country.population}}</p>
+    <p>Languages: {{country.languages}}</p>
     <img class="lrg-flag" :src="country.flag"/>
   </div>
 </template>
