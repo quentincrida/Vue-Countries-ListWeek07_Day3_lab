@@ -2,6 +2,7 @@
   <div>
     <h1>Countries</h1>
     <div class="main-container">
+      <country-select :countries='countries'></country-select>
       <countries-list :countries='countries'></countries-list>
       <country-detail :country='selectedCountry'></country-detail>
     </div>
@@ -13,6 +14,7 @@
 import CountriesList from './components/CountriesList.vue';
 import { eventBus } from './main.js';
 import CountryDetail from './components/CountryDetail.vue';
+import CountrySelect from './components/CountrySelect.vue';
 
 export default {
   name: 'app',
@@ -33,7 +35,8 @@ export default {
   },
   components: {
     "countries-list": CountriesList,
-    "country-detail": CountryDetail
+    "country-detail": CountryDetail,
+    "country-select": CountrySelect
   }
 }
 </script>

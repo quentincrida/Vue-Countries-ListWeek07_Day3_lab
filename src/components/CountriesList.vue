@@ -1,5 +1,8 @@
 <template lang="html">
   <div>
+    <select>
+      <country-select v-for="(country,index) in countries" :country="country" :key="index"></country-select>
+    </select>
     <ul>
       <list-item v-for="(country, index) in countries" :country="country" :key="index"></list-item>
     </ul>
@@ -8,13 +11,15 @@
 
 <script>
 import ListItem from './ListItem.vue';
+import CountrySelect from './CountrySelect.vue'
 
 
 export default {
   name: 'countries-list',
   props: ['countries'],
   components: {
-    "list-item": ListItem
+    "list-item": ListItem,
+    "country-select": CountrySelect
   }
 }
 </script>
