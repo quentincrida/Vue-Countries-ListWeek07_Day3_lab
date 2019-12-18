@@ -46,8 +46,7 @@ export default {
     display: flex;
     justify-content: space-between;
   }
-  .lrg-flag {
-    height: 10px;
-    width: auto;
-  }
+
+
+  
 </style>

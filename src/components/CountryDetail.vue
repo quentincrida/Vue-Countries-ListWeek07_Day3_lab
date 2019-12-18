@@ -17,4 +17,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+.lrg-flag {
+  height: 100px;
+  width: auto;
+}
 </style>
