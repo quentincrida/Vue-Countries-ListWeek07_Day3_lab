@@ -2,9 +2,9 @@
   <div>
     <h1>Countries</h1>
     <div class="main-container">
-      <country-select :countries='countries'></country-select>
-      <countries-list :countries='countries'></countries-list>
-      <country-detail :country='selectedCountry'></country-detail>
+      <country-select :countries='countries'/>
+      <!-- <countries-list :countries='countries'></countries-list> -->
+      <country-detail :country='selectedCountry'/>
     </div>
   </div>
 
