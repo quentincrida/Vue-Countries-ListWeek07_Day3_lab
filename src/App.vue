@@ -32,12 +32,14 @@ export default {
     eventBus.$on('country-selected', (country) => {
       this.selectedCountry = country;
     })
+
   },
   components: {
     "countries-list": CountriesList,
     "country-detail": CountryDetail,
     "country-select": CountrySelect
   }
+
 }
 </script>
 
@@ -48,5 +50,5 @@ export default {
   }
 
 
-  
+
 </style>
