@@ -3,7 +3,7 @@
     <h3>{{country.name}}</h3>
     <p>Capital City: {{country.capital}}</p>
     <p>Population: {{country.population}}</p>
-    <p>Languages: {{country.languages}}</p>
+    <p v-for=" language in country.languages">Languages: {{language.name}}</p>
     <img class="lrg-flag" :src="country.flag"/>
   </div>
 </template>
